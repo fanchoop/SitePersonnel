@@ -27,7 +27,7 @@ html,body{
   bottom:0;
   left:0;
   z-index:-1;
- background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(27,32,48,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgb(27, 27, 27) 100%);
 }
 .header:before{
   content:"";
@@ -139,7 +139,7 @@ html,body{
 
 body {
 	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	
 	overflow-x: hidden;
 	color: #2a3237;
 	-webkit-font-smoothing: antialiased;
@@ -187,7 +187,10 @@ body {
 p {
 	font-size: 18px;
 	line-height: 1.5;
-	color: #8a8e91;
+    color: #DBD4D4;
+}
+.content>p{
+    color:#252b34;
 }
 
 h1,
@@ -218,7 +221,7 @@ h4 {
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 h6 {
@@ -364,7 +367,7 @@ nav.navbar-fixed-top {
 	top: 0;
 	padding: 15px 0;
 	opacity: 0;
-	background:#181a28;
+	background:#252b34;
 	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
 }
 
@@ -569,9 +572,10 @@ width:110px;
 	border-bottom-left-radius:3px;
 }
 
-.skillbar-title span {
+.skillbar-title span  {
 	display:block;
-	background:rgba(0, 0, 0, 0.1);
+    background:rgba(0, 0, 0, 0.1);
+    color: white;
 	padding:0 20px;
 	height:35px;
 	line-height:35px;
@@ -1019,11 +1023,10 @@ section {
 .stage {
 	width: 100%;
 	height: 350px;
-	background-color: #d5d8f9;
+	background-color: white;
 	margin: 30px 0;
 	text-align: center;
-	text-color: white;
-	border: 2px solid #101421;
+	border: 2px solid #5dade2;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
@@ -1051,7 +1054,7 @@ section {
 }
 
 .stage:hover {
-	border-color: #ff8000;
+	border: 4px solid #5dade2;
 }
 
 .stage:hover .icon-holder {
@@ -1110,7 +1113,8 @@ background-image: url('../images/ImagesFond/work.jpg');
 
 .team:hover .cover .overlay {
 	opacity: 1;
-	background-image: url('../images/ImagesFond/work.jpg');
+    background-image: url('../images/ImagesFond/work.jpg');
+    border: 4px solid #5dade2;
 }
 
 .team .avatar {
@@ -1778,6 +1782,9 @@ footer .social-footer li:hover a {
 }
 .navy {
 	color: #101421;
+}
+.bleu {
+    color:#5dade2;
 }
 .black {
 	color: #000000;
