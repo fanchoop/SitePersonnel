@@ -1,7 +1,7 @@
 <?php
 
-$EmailFrom = "francois.danet1@gmail.com";
-$EmailTo = "francois.danet1@gmail.com";
+$EmailFrom = "francois.danet@hotmail.fr";
+$EmailTo = "francois.danet@hotmail.fr";
 $Subject = "Contact site internet";
 $Name = Trim(stripslashes($_POST['Name']));
 $Tel = Trim(stripslashes($_POST['Tel']));
@@ -32,7 +32,7 @@ $Body .= "Message: ";
 $Body .= $Message;
 $Body .= "\n";
 
-// send email
+
 
 // redirect to success page
 /*if ($success){
@@ -75,7 +75,7 @@ else{
 }
 
     if ($decode['success'] == true) {
-    	$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+        $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
     	print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
         // C'est un humain
 
