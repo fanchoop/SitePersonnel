@@ -1,12 +1,12 @@
 <?php
 
-$EmailFrom = "francois.danet@hotmail.fr";
+$EmailFrom = "francois.danet1@gmail.com";
 $EmailTo = "francois.danet@hotmail.fr";
 $Subject = "Contact site internet";
-$Name = Trim(stripslashes($_POST['Name']));
-$Tel = Trim(stripslashes($_POST['Tel']));
-$Email = Trim(stripslashes($_POST['Email']));
-$Message = Trim(stripslashes($_POST['Message']));
+$Name = htmlspecialchars($_POST['Name']);
+$Tel = htmlspecialchars($_POST['Tel']);
+$Email = htmlspecialchars($_POST['Email']);
+$Message = htmlspecialchars($_POST['Message']);
 
 
 
